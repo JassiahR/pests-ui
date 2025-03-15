@@ -1,6 +1,5 @@
 #YOLO ONLY
 
-pip install -r requirements.txt
 # Run installation
 install_packages()
 import streamlit as st

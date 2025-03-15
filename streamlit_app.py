@@ -1,5 +1,13 @@
 #YOLO ONLY
+# Function to install packages
+def install_packages(requirements_file="requirements.txt"):
+    try:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", requirements_file])
+    except subprocess.CalledProcessError as e:
+        print(f"Failed to install dependencies: {e}")
 
+# Run installation
+install_packages()
 import streamlit as st
 from PIL import Image
 import numpy as np

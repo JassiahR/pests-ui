@@ -1,13 +1,6 @@
 #YOLO ONLY
-import subprocess
-import sys
-# Function to install packages
-def install_packages(requirements_file="requirements.txt"):
-    try:
-        subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", requirements_file])
-    except subprocess.CalledProcessError as e:
-        print(f"Failed to install dependencies: {e}")
 
+pip install -r requirements.txt
 # Run installation
 install_packages()
 import streamlit as st
